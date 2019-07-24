@@ -1,16 +1,28 @@
 {
-  "name": "task",
+  "name": "packagenew",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hello",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "server": "node index.js",
+    "client": "npm start --prefix app",
+    "heroku-postbuild": "cd app && npm install && npm run build"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "dmytro-mavdryk",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mongoose": "^5.6.4"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "example",
+    "heroku",
+    "concurrently"
+  ],
+  "engines": {
+    "node": "10.x"
   }
 }
